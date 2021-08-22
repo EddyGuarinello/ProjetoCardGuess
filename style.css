@@ -1,0 +1,31 @@
+html,body{
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    color: #002E3B;
+}
+body{
+    background-color: rgb(31, 98, 185);
+}
+#pageWrap{
+    height: 100vh;
+    
+}
+.cardbox{
+    display: flex;
+    justify-content: space-evenly;
+}
+.dismiss{
+    display:none;
+}
+h1{
+    text-align: center;
+    margin: 0;
+    
+}
+.boxh1{
+    height: 33.3%;
+}
+img{
+    width: 240px;
+    height: 320px;
+}
