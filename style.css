@@ -41,27 +41,29 @@ img{
     height: 80%;
 }
 
-@media (max-width:1024px){
 
-.h1LargeRes{
-    display:none;
-}
-.h1SmallRes{
-    display: block;
-    text-align: center;
-}
-p{
-    margin: 0
-}
-}
-@media (max-width:650px){
+@media (max-width:767px){
+    .h1LargeRes{
+        display:none;
+    }
+    .h1SmallRes{
+        display: block;
+        text-align: center;
+    }
     p{
         font-size: 20px;
+        margin: 0
     }
     #firstH1{
         display: none;
     }
     #h2Bottom{
         margin:0;
+    }
+    .boxh{
+        height: fit-content;
+    }
+    h2{
+        margin: 0;
     }
 }
