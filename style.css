@@ -44,6 +44,10 @@ img{
 }
 
 @media (max-width:1024px){
+#pageWrap{
+    height: 90vh;
+}
+
 .h1LargeRes{
     display:none;
 }
