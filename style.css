@@ -2,35 +2,61 @@ html,body{
     margin: 0;
     font-family: 'Orbitron', sans-serif;
     color: #002E3B;
+   
 }
 body{
     background-color: rgb(31, 98, 185);
 }
 #pageWrap{
     height: 100vh;
-    
-}
-.cardbox{
     display: flex;
-    justify-content: space-evenly;
-}
-.dismiss{
-    display:none;
-}
-h1{
-    text-align: center;
-    margin: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     
 }
-.boxh1{
+.boxh{
     height: 33.3%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: center;
+}
+.cardbox{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    margin: 0;
+}
+.h1SmallRes{
+    display: none;
+}
+img{
+    /* width: 240px;
+    height: 320px; */
+    width: 20%;
+    height: 80%;
 }
 
-img{
-    width: 240px;
-    height: 320px;
+@media (max-width:1024px){
+.h1LargeRes{
+    display:none;
+}
+.h1SmallRes{
+    display: block;
+    text-align: center;
+}
+p{
+    margin: 0
+}
+}
+@media (max-width:600px){
+    p{
+        font-size: 20px;
+    }
 }
