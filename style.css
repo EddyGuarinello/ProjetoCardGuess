@@ -24,7 +24,12 @@ h1{
 }
 .boxh1{
     height: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+
 img{
     width: 240px;
     height: 320px;
