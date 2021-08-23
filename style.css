@@ -37,16 +37,11 @@ h1{
     display: none;
 }
 img{
-    /* width: 240px;
-    height: 320px; */
     width: 20%;
     height: 80%;
 }
 
 @media (max-width:1024px){
-#pageWrap{
-    height: 90vh;
-}
 
 .h1LargeRes{
     display:none;
@@ -59,8 +54,14 @@ p{
     margin: 0
 }
 }
-@media (max-width:600px){
+@media (max-width:650px){
     p{
         font-size: 20px;
+    }
+    #firstH1{
+        display: none;
+    }
+    #h2Bottom{
+        margin:0;
     }
 }
