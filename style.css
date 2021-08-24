@@ -38,7 +38,7 @@ h2{
     margin: 0;
 }
 
-@media (max-width:767px){
+@media (max-width:1024px){
     .h1LargeRes{
         display:none;
     }
