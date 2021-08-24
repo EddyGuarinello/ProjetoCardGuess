@@ -13,14 +13,8 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
 }
 .boxh{
-    height: 33.3%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
     text-align: center;
 }
 .cardbox{
@@ -40,7 +34,9 @@ img{
     width: 20%;
     height: 80%;
 }
-
+h2{
+    margin: 0;
+}
 
 @media (max-width:767px){
     .h1LargeRes{
@@ -56,14 +52,5 @@ img{
     }
     #firstH1{
         display: none;
-    }
-    #h2Bottom{
-        margin:0;
-    }
-    .boxh{
-        height: fit-content;
-    }
-    h2{
-        margin: 0;
     }
 }
