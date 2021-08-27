@@ -1,11 +1,11 @@
 html,body{
     margin: 0;
     font-family: 'Orbitron', sans-serif;
-    color: #002E3B;
+    color: #015e77;
    
 }
 body{
-    background-color: rgb(31, 98, 185);
+    background-color: rgb(0, 0, 0);
 }
 #pageWrap{
     height: 100vh;
@@ -33,6 +33,7 @@ h1{
 img{
     width: 20%;
     height: 80%;
+    border: 2px solid #015e77;
 }
 h2{
     margin: 0;
