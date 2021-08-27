@@ -1,7 +1,7 @@
 html,body{
     margin: 0;
     font-family: 'Orbitron', sans-serif;
-    color: #015e77;
+    color: #00a4d1;
    
 }
 body{
@@ -33,7 +33,7 @@ h1{
 img{
     width: 20%;
     height: 80%;
-    border: 2px solid #015e77;
+    border: 2px solid #008ab1;
 }
 h2{
     margin: 0;
