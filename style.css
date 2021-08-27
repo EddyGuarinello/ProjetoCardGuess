@@ -38,7 +38,44 @@ img{
 h2{
     margin: 0;
 }
+.round{
+    margin-right: 30px;
+}
+#score{
+    margin-left: 5px;
+}
+/* Page Resultado */
+#resultBodyHidden{
+    display: none;
+}
+#resultBody{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    background-color: black;
+}
+#resultWrap{
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+}
+button{
+    background-color: #008ab1;
+    height: 50px;
+    font-size: 20px;
+    font-family: 'Orbitron', sans-serif;
+    color: white;
+    animation: botao 3s infinite;
 
+}
+@keyframes	botao {
+    from {background-color: black;}
+    to {background-color: #008ab1;}
+}
 @media (max-width:1024px){
     .h1LargeRes{
         display:none;

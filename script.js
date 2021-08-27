@@ -63,7 +63,8 @@ function events() {
         score += 100;
         cardFlip++;
         card1.src = "cards/CardUni.png";
-        totalScore.innerText = score
+        totalScore[0].innerText = score
+        totalScore[1].innerText = score
         card1.removeEventListener("click", clicked)
 
     })
@@ -71,7 +72,8 @@ function events() {
         score += 50;
         cardFlip++;
         card2.src = "cards/CardSun.png";
-        totalScore.innerText = score
+        totalScore[0].innerText = score
+        totalScore[1].innerText = score
         card2.removeEventListener("click", clicked)
 
     })
@@ -79,7 +81,8 @@ function events() {
         score += -50;
         cardFlip++;
         card3.src = "cards/CardMoon.png";
-        totalScore.innerText = score
+        totalScore[0].innerText = score
+        totalScore[1].innerText = score
         card3.removeEventListener("click", clicked)
 
     })
@@ -87,7 +90,8 @@ function events() {
         score += -100;
         cardFlip++;
         card4.src = "cards/CardDemon.png";
-        totalScore.innerText = score
+        totalScore[0].innerText = score
+        totalScore[1].innerText = score
         card4.removeEventListener("click", clicked)
 
     })
@@ -101,35 +105,45 @@ function deleteCardEvents() {
 }
 generateCards();
 
+let round = 1;
+let roundCount = document.querySelectorAll(".round")
 let score = 300;
 let cardFlip = 0;
 let win = 0;
 let corpo = document.querySelector("body")
+let result = document.querySelector("#resultBodyHidden")
+
 corpo.addEventListener("click", function () {
     if (score >= 600) {
         if (win == 0) {
             resultado.innerText = "Parabéns, você venceu!"
             deleteCardEvents()
+            result.id="resultBody"
             win = 1;
         }
     } else if (score <= 0) {
         if (win == 0) {
             resultado.innerText = "Que pena... Você perdeu :( !"
             deleteCardEvents()
+            result.id="resultBody";
             win = 1;
         }
     } else if (cardFlip == 2) {
-        deleteCardEvents()
+        deleteCardEvents();
         setTimeout(function () {
-            removeCards()
+            removeCards();
 
-            generateCards()
-            events()
+            generateCards();
+            events();
             cardFlip = 0;
+            round++;
+            roundCount[0].innerText = round;
+            roundCount[1].innerText = round;
         }, 1000)
     }
 })
-let totalScore = document.querySelector("#score");
+let totalScore = document.querySelectorAll(".score");
 let resultado = document.querySelector("#resultado");
-totalScore.innerText = score
+totalScore[0].innerText = score
+
 events();
